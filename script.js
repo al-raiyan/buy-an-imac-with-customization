@@ -19,6 +19,10 @@ const deliveryCharge = document.getElementById("delivery-charge")
 const totalPrice = document.getElementById("total-price")
 const grandTotal = document.getElementById("grand-total")
 
+// Promo Code Section ID Call
+const promoCodeInput = document.getElementById("promo-code-input")
+const promoCodeApply = document.getElementById("promo-code-apply")
+
 // select functuon
 function isContain(element) {
     return element.classList.contains("selected")
@@ -101,3 +105,17 @@ secondDeliveryOption.addEventListener('click', function () {
     deliveryCharge.innerText = '20';
     updateTotal()
 })
+
+// Promo Code Event Listener
+promoCodeApply.addEventListener("click", function () {
+    const promoCode = "stevekaku"
+    const inputCode = promoCodeInput.value
+    if (promoCode == inputCode) {
+        console.log("Yahooo!!!Your Promo Code Is Activate");
+    }
+    else {
+        console.log("Opps!!Your Promo Code Isn't Correct");
+    }
+})
+
+// I Tried But The Final Price 20% Decries Via Promo Code Wasn't Work For Me.I Want To Help For Resolve It. Thank You. 

@@ -8,6 +8,7 @@
     <!-- Tailwind CSS and Vanilla CSS Add -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <title>Apple</title>
 </head>
 
@@ -107,12 +108,15 @@
                                 <hr>
                             </div>
                         </div>
+                        <!-- Promo Code Section Start-->
                         <div>
                             <h5>Add Promo Code</h5>
-                            <input class="border border-gray-300 rounded px-12 py-2" type="text"
+                            <input id="promo-code-input" class="border border-gray-300 rounded px-12 py-2" type="text"
                                 placeholder="Apply Promo Code">
-                            <button class="bg-red-600 px-4 rounded py-2 text-white font-medium">Apply</button>
+                            <button id="promo-code-apply"
+                                class="bg-red-600 px-4 rounded py-2 text-white font-medium">Apply</button>
                         </div>
+                        <!-- Promo Code Section End-->
                     </div>
                     <!-- Cart Item End -->
                 </div>

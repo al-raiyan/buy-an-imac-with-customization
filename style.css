@@ -8,3 +8,8 @@ h5{
 	font-size: 20px;
 	font-weight: 700;
 }
+.selected{
+	color: white;
+	background-color: rgb(80, 79, 79);
+	border: 1px solid black;
+}
